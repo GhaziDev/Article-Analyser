@@ -4,7 +4,7 @@
 - It is a project that calculate and provide some analysis based on an article or a text provided by the user, like each word length/size, shortest and longest word, and most common word, it is a helpful tool to look for articles/text mistakes or to analyze articles/texts words.
 
 ## What does this project mainly depend on ?
-- It mainly depend on threading, especially when the user has a big article/text file, threading will make the execution faster to evaluate the file and give different analysis.
+- It mainly depend on threading, it is very useful when the user has a big article/text file, threading will make the execution faster to evaluate the file and give different analysis.
 
 ## Why is C++ choosen for this project ?
 - two reasons : 1)Performance: C++ is faster than most languages, and it fit this project, especially when the user want to provide a very big article to analyze.
