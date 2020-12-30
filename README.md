@@ -8,7 +8,7 @@
 
 ## Why is C++ choosen for this project ?
 - two reasons : 1)Performance: C++ is faster than most languages, and it fit this project, especially when the user want to provide a very big article to analyze.
-2) Threading: I used python a lot in my projects, but python isnt that good for threading or multiprocessing, yet C++ is effective choice for threading.
+                2) Threading: I used python a lot in my projects, but python isnt that good for threading or multiprocessing, yet C++ is effective choice for threading.
 
 ## Is Python used in this project ?
 - Yes it is used for drawing bar chart for word lengths, using matplotlib library, the reason for using matplotlib library, is because it is easier for the user to read a chart rather than an output of text, on a side note, matplotlib provide a "save" functionality for the user to save it in their own system.
