@@ -11,7 +11,7 @@
                 2) Threading: I used python a lot in my projects, but python isnt that good for threading or multiprocessing, yet C++ is effective choice for threading.
 
 ## Is Python used in this project ?
-- Yes it is used for drawing bar chart for word lengths, using matplotlib library, the reason for using matplotlib library, is because it is easier for the user to read a chart rather than an output of text, on a side note, matplotlib provide a "save" functionality for the user to save it in their own system.
+- Yes, it is used for drawing bar chart for word lengths, using matplotlib library, the reason for using matplotlib library, is because it is easier for the user to read a chart rather than an output of text, on a side note, matplotlib provide a "save" functionality for the user to save it in their own system.
 
 ## So, how can we use this project ?
 - 1) copy the article/text you want into txt file, then run ``main.cpp`` it will ask for a full path for this txt file, if the txt file is empty the program will quit, otherwise it will continue and evaluate words lengths, shortest and longest words, and common words, each on a different thread.
