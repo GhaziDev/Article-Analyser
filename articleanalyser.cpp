@@ -69,15 +69,27 @@ void ArticleAnalyser::short_long() {
 
 }
 void ArticleAnalyser::common_word() {
+	std::vector<std::pair<std::string,int>>hashmap;
+	std::map<std::string,int>mp;
 	std::vector<std::string>vec = read_file();
 	std::string str;
-	for (int i = 0; i < vec.size()-1 ; i++) {
-		if (std::count(vec.begin(), vec.end(), vec[i]) > std::count(vec.begin(), vec.end(), vec[i + 1])) {
-			str = vec[i];
-
-
+	for (auto i : vec) {
+		if (mp[i]) {
+			mp[i] += 1;
+		}
+		else {
+			mp[i] = 1;
 		}
 	}
+	for(auto i:mp){
+		hashmap.push_back(i);
+	}
+	std::sort(hashmap.begin(),hashmap.end(),[](std::pair<std::string,int>val1,std::pair<std::string,int>val2){return val1.second>val2.second;});
+	for(auto i:hashmap){
+		str+=i.first;
+		break;
+	}
+
 	if (str == "") {
 		std::cout << "There is no most common word " << std::endl;
 	}
